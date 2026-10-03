@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Visual Designer Portfolio</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #222;
+            background: #fff;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* NAVBAR */
+        nav {
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 35px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        /* HERO */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 420px;
+        }
+
+        .hero-text {
+            width: 50%;
+        }
+
+        .small-title {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            color: #777;
+            line-height: 1.6;
+            max-width: 450px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #252525;
+            color: rgb(64, 64, 64);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+
+        /* CLIENTS */
+        .clients {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 35px 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #9000ff;
+            color: #ff0000;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* SERVICES */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+            padding: 70px 0;
+            text-align: center;
+        }
+
+        .service-icon {
+            width: 65px;
+            height: 65px;
+            margin: 0 auto 20px;
+            border-radius: 10px 10px 35px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+        }
+
+        .pink {
+            background: #f7c1bd;
+        }
+
+        .orange {
+            background: #ff5a4f;
+        }
+
+        .green {
+            background: #80908e;
+        }
+
+        .service h3 {
+            margin-bottom: 12px;
+        }
+
+       
+        }
+        .project h4 {
+            margin-top: 12px;
+            font-size: 15px;
+        }
+
+        .project p {
+            color: #888;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        /* TESTIMONIALS */
+        .testimonials {
+            padding: 80px 0;
+        }
+
+        .testimonial-grid 
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 45px 35px;
+        }
+
+        .testimonial p {
+            color: #666;
+            font-size: 13px;
+            line-height: 1.6;
+            margin-bottom: 18px;
+        }
+
+        .person-role {
+            font-size: 11px;
+            color: #888;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: #f7f7f7;
+            padding: 70px 0;
+            margin-top: 20px;
+        }
+
+        .contact h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            color: #777;
+            margin-bottom: 25px;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 30px 0;
+            text-align: center;
+            color: #888;
+            font-size: 13px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+
+            nav ul {
+                display: none;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+      
+
+            .services,
+            .projects,
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .projects {
+                gap: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- NAVIGATION -->
+        <nav>
+            <div class="logo">Logo</div>
+
+            <ul>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-text">
+                <div class="small-title">Branding / Image making</div>
+
+                <h1>Visual Designer</h1>
+
+                <p>
+                    I create beautiful visual experiences and thoughtful
+                    designs that help brands communicate their ideas.
+                </p>
+
+                <a href="#" class="btn">Contact</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTDkU2qD4y6pn7rw-rjyLEFQUUJOuMt4Shdmpx8SnhMQ&s=10"
+                     alt="Designer">
+            </div>
+
+        </section>
+
+
+     
+        < ection>
+     
+
+            <div class="service">
+                <div class="service-icon green">↗️</div>
+                <h3>Art Direction</h3>
+                <p>
+                    Developing creative direction and
+                    visual concepts for brands.
+                </p>
+            </div>
+
+        </section>
+               
+
+                  
+                    </div>
+                </div>
+
+
+              /p>
+
+
+    </div>
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         RECENT PROJECTS
+    ========================== -->
+
+    <section class="projects">
+
+        <h1>Recent Projects</h1>
+
+        <div class="project-grid">
+
+            <!-- Project 1 -->
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=800&q=80"
+                     alt="Project">
+
+                <h3>Project title</h3>
+                <p>UI, Art direction</p>
+            </div>
+
+
+            <!-- Project 2 -->
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80"
+                     alt="Project">
+
+                <h3>Project title</h3>
+                <p>UI, Art direction</p>
+            </div>
+
+
+            <!-- Project 3 -->
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80"
+                     alt="Project">
+
+                <h3>Project title</h3>
+                <p>UI, Art direction</p>
+            </div>
+
+
+            <!-- Project 4 -->
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=800&q=80"
+                     alt="Project">
+
+                <h3>Project title</h3>
+                <p>UI, Art direction</p>
+            </div>
+
+
+            <!-- Project 5 -->
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=800&q=80"
+                     alt="Project">
+
+                <h3>Project title</h3>
+                <p>UI, Art direction</p>
+            </div>
+
+
+            <!-- Project 6 -->
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80"
+                     alt="Project">
+
+                <h3>Project title</h3>
+                <p>UI, Art direction</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CLIENT TESTIMONIALS
+    ========================== -->
+
+    <section class="testimonials">
+
+        <h2>Client Testimonials</h2>
+
+        <div class="testimonial-grid">
+
+            <!-- Card 1 -->
+            <div class="testimonial-card">
+
+                <p class="review">
+                    This is a template Figma file,
+                    turned into code using Anima.
+                    Learn more at AnimaApp.com
+                </p>
+
+                <div class="customer">
+
+                    <img src="https://i.pravatar.cc/100?img=47"
+                         alt="Gemma Nolen">
+
+                    <div class="customer-info">
+
+                        <div class="stars">
+                            ★ ★ ★ ★ ★
+                        </div>
+
+                        <h4>Gemma Nolen</h4>
+
+                        <span>Google</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="testimonial-card">
+
+                <p class="review">
+                    This is a template Figma file,
+                    turned into code using Anima.
+                    Learn more at AnimaApp.com
+                </p>
+
+                <div class="customer">
+
+                    <img src="https://i.pravatar.cc/100?img=47"
+                         alt="Gemma Nolen">
+
+                    <div class="customer-info">
+
+                        <div class="stars">
+                            ★ ★ ★ ★ ★
+                        </div>
+
+                        <h4>Gemma Nolen</h4>
+
+                        <span>Google</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="testimonial-card">
+
+                <p class="review">
+                    This is a template Figma file,
+                    turned into code using Anima.
+                    Learn more at AnimaApp.com
+                </p>
+
+                <div class="customer">
+
+                    <img src="https://i.pravatar.cc/100?img=47"
+                         alt="Gemma Nolen">
+
+                    <div class="customer-info">
+
+                        <div class="stars">
+                            ★ ★ ★ ★ ★
+                        </div>
+
+                        <h4>Gemma Nolen</h4>
+
+                        <span>Google</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 4 -->
+            <div class="testimonial-card">
+
+                <p class="review">
+                    This is a template Figma file,
+                    turned into code using Anima.
+                    Learn more at AnimaApp.com
+                </p>
+
+                <div class="customer">
+
+                    <img src="https://i.pravatar.cc/100?img=47"
+                         alt="Gemma Nolen">
+
+                    <div class="customer-info">
+
+                        <div class="stars">
+                            ★ ★ ★ ★ ★
+                        </div>
+
+                        <h4>Gemma Nolen</h4>
+
+                        <span>Google</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 5 -->
+            <div class="testimonial-card">
+
+                <p class="review">
+                    This is a template Figma file,
+                    turned into code using Anima.
+                    Learn more at AnimaApp.com
+                </p>
+
+                <div class="customer">
+
+                    <img src="https://i.pravatar.cc/100?img=47"
+                         alt="Gemma Nolen">
+
+                    <div class="customer-info">
+
+                        <div class="stars">
+                            ★ ★ ★ ★ ★
+                        </div>
+
+                        <h4>Gemma Nolen</h4>
+
+                        <span>Google</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 6 -->
+            <div class="testimonial-card">
+
+                <p class="review">
+                    This is a template Figma file,
+                    turned into code using Anima.
+                    Learn more at AnimaApp.com
+                </p>
+
+                <div class="customer">
+
+                    <img src="https://i.pravatar.cc/100?img=47"
+                         alt="Gemma Nolen">
+
+                    <div class="customer-info">
+
+                        <div class="stars">
+                            ★ ★ ★ ★ ★
+                        </div>
+
+                        <h4>Gemma Nolen</h4>
+
+                        <span>Google</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CONTACT SECTION
+    ========================== -->
+
+    <section class="contact">
+
+        <div class="contact-wrapper">
+
+            <!-- Left side -->
+            <div class="contact-left">
+
+                <h2>Lets work together</h2>
+
+                <p>
+                    This is a template Figma file, turned into code using Anima.
+                    Learn more at AnimaApp.com This is a template Figma file,
+                    turned into code using Anima. Learn more at AnimaApp.com
+                </p>
+
+
+                <!-- Social icons -->
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="fab fa-discord"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-behance"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Right side -->
+            <div class="contact-right">
+
+                <form>
+
+                    <input
+                        type="text"
+                        placeholder="Name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        required
+                    >
+
+                    <button type="submit">
+                        Submit
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</body>
+</html>
